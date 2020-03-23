@@ -24,6 +24,10 @@ export class ProductListComponent implements OnInit {
   getProducts() {
     this.products = this.productService.listProducts();
   }
+  removeitem(id){ 
+    this.products = this.products.filter(product=> product.id !== id);
+  
+    }
 
   // changeStatus(){
   //   // this.product.status = !this.product.status;
@@ -40,11 +44,13 @@ export class ProductListComponent implements OnInit {
   //   // console.log(this.selected);
   // }
   // removeitem(id){
-  // //  console.log(id);
-  // //  this.products.filter(function(product){
-  // //    return this.product.id !== id;
-  // //  })
-  // this.products = this.products.filter(product=> product.id !== id);
-  // }
+  //   //  console.log(id);
+  //   //  this.products.filter(function(product){
+  //   //    return this.product.id !== id;
+  //   //  })
+  //   this.products = this.products.filter(product=> product.id !== id);
+    
+  
+  //   }
 
 }
