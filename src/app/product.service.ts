@@ -13,7 +13,13 @@ export class ProductService {
     return this.products;
   }
   addProducts(product){
-    let newObj = {id:11, ...product};
+    let newObj = {...product};
     this.products.push(newObj);
+  }
+   updateProducts(product){
+    return this.products.map( item => item.id === product.id ? product : item);
+  }
+  removeProducts(id){
+    return this.products.filter(product => product.id == id);
   }
 }
