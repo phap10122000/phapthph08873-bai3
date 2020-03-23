@@ -17,7 +17,9 @@
         <td>{{product.notes}}</td>
         <td>{{product.status? 'Còn hàng' : 'Hết hàng'}}</td>
         <td><button class="btn btn-primary " (click)="showDetail(product)">Detail</button>
-            <button class="btn btn-primary " (click)="removeitem(product.id)">Delete</button></td>                  
+            <button class="btn btn-primary " (click)="removeitem(product.id)">Delete</button>
+            <button class="btn btn-primary " (click)="removeitem(product.id)">Edit</button>
+            </td>                  
         </tr>
         
     </tbody>

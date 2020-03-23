@@ -7,6 +7,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceComponent } from './service/service.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'list', component: ProductListComponent},
   { path: 'home', component: HomeComponent},
-  { path: 'service', component: ServiceComponent}
+  { path: 'service', component: ServiceComponent},
+   { path: 'contact', component: ContactComponent}
   // { path: '**', component:}
 ];
 
