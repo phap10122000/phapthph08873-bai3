@@ -15,15 +15,15 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: 'home', component: HomeComponent},
   { path: 'add', component: ProductAddComponent},
-  { path: 'manager', component: ProductManagerComponent},
   { path: 'about', component: AboutComponent},
   { path: 'list', component: ProductListComponent},
-  { path: 'home', component: HomeComponent},
   { path: 'service', component: ServiceComponent},
-   { path: 'contact', component: ContactComponent},
-   { path: 'manager/edit/:id', component: ProductEditComponent},
-   { path: 'manager/:id', component: ProductDetailComponent}
+  { path: 'contact', component: ContactComponent},
+  { path: 'manager', component: ProductManagerComponent},
+  { path: 'manager/edit/:id', component: ProductEditComponent},
+  { path: 'manager/:id', component: ProductDetailComponent}
   // { path: '**', component:}
 ];
 
