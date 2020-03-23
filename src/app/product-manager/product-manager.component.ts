@@ -33,7 +33,6 @@ export class ProductManagerComponent implements OnInit {
     //    return this.product.id !== id;
     //  })
     this.products = this.products.filter(product=> product.id !== id);
-    
-  
-    }
+ }
+
 }

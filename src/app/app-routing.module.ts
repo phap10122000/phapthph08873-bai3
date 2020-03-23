@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { ServiceComponent } from './service/service.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'list', component: ProductListComponent},
   { path: 'home', component: HomeComponent},
   { path: 'service', component: ServiceComponent},
-   { path: 'contact', component: ContactComponent}
+   { path: 'contact', component: ContactComponent},
+   { path: 'manager/edit/:id', component: ProductEditComponent},
+   { path: 'manager/:id', component: ProductDetailComponent}
   // { path: '**', component:}
 ];
 
